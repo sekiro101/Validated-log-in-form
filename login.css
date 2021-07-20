@@ -9,7 +9,7 @@
 body{
     display: flex;
     justify-content: center;
-    background: url(wallpaper/Waterfall.jpg);
+    background: url(wallpaper/Mountain.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,7 +19,7 @@ form{
     width: 50%;
     height: 50vh;
     color: white;
-    background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(wallpaper/Waterfall.jpg) center/ cover  no-repeat;
+    background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(wallpaper/Mountain.jpg) center/ cover  no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,7 +72,7 @@ pre{
     text-align: center;
 }
 #pass:hover,#register:hover{
-    color: green;
+    color: rgb(255, 166, 0);
     cursor: pointer;
 }
 
