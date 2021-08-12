@@ -12,22 +12,27 @@
 <body>
 
     <form action="">
-            <h1>Login</h1>
+        <h1>Login</h1>
 
-        <div class="input">
-            <input type="email" placeholder="Email Address" id="input1" class="info">
+        <div class="input" id="input1">
+            <input type="text" placeholder="Username"  class="info">
         </div>
 
-        <div class="input">
-            <input type="password" placeholder="Password" id="input2" class="info">
+        <div class="alert" id="empt1"></div>
+
+        <div class="input" id="input2">
+            <input type="password" placeholder="Password"  class="info">
         </div>
         
+        <div class="alert" id="empt2"></div>
+        
         <div id="button">
-        <button>Login</button>
+        <input type="submit" value="Login">
         </div>
 
-        <pre><a id="pass">Forgot Password?</a>  |  <a id="register">Register</a></pre>
+        <pre><span id="pass">Forgot Password?</span>  |  <span id="register">Register</span></pre>
     </form> 
 
+    <script src="login.js"></script>
 </body>
 </html>

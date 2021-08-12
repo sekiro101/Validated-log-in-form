@@ -4,30 +4,29 @@
     box-sizing: border-box;
 }
 :root{
-    font-size: 0.75em;
+    font-size: 62%;
 }
 body{
     display: flex;
     justify-content: center;
-    background: url(wallpaper/Mountain.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background: url(wallpaper/Mountain.jpg) 
+    center/ cover  no-repeat fixed;
 }
-form{
-    width: 50%;
+form, #credentials{
+    max-width: 500px;
+    min-width: 300px;
     height: 50vh;
     color: white;
-    background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(wallpaper/Mountain.jpg) center/ cover  no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), 
+    url(wallpaper/Mountain.jpg) center/ cover  no-repeat;
     box-shadow: 0 0 25px black; 
     border-radius: 7px;    
     margin-top: 25vh;
 }
-h1{
+#credentials{
+    height: 50vh;
+}
+h1, #h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -35,7 +34,7 @@ h1{
     margin-top: 5vh;
     font-weight: lighter;
 }
-input[type='email'], input[type='password'], button{
+input[type='text'], input[type='password'], input[type='submit']{
     color: white;
     box-shadow: 0 0 3px inset white;
     border: none;
@@ -48,22 +47,42 @@ input[type='email'], input[type='password'], button{
     outline: none;
     background: none;
 }
-button{
+.alert{
+    text-align: center;
+    color: orangered;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.space{
+    width: 85%;
+    height: 5.5vh;
+    margin-top: 2vh;
+}
+#info1{
+    margin-top: 2vh;
+}
+.info:focus, .info:hover, .space:hover{
+    background: rgba(128, 128, 128, 0.39);
+    box-shadow: 0 0 3px inset black;
+}
+input[type='submit']{
     width: 50%;
     background: indigo;
     box-shadow: 0 0 10px black ;
 }
-button:active{
+input[type='submit']:hover{
+    cursor:pointer
+}
+input[type='submit']:active{
     box-shadow: 0 0 5px inset black ;
 }
 .input, #button{
     display: flex;
     justify-content: center;
 }
-#input1{
+input[type='text']{
     margin-top: 4vh;
 }
-#input2, button, pre{
+input[type='password'], input[type='submit'], pre{
     margin-top: 2.1vh;
 }
 
@@ -71,14 +90,26 @@ pre{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
 }
-#pass:hover,#register:hover{
+#h1{
+    font-size: 2em;
+}
+#image{
+    box-shadow: 0 0 25px black;
+    margin-top: 5vh;
+    max-width: 50%;
+}
+span:hover{
     color: rgb(255, 166, 0);
     cursor: pointer;
 }
-
-@media screen and (min-width:512px) {
+@media screen and (min-width:320px) {
     :root{
-        font-size: 0.9em;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:500px) {
+    :root{
+        font-size: 1.05em;
     }
 }
 @media screen and (min-width:640px) {
@@ -107,12 +138,29 @@ pre{
         width: 30%;
     }
 }
+@media screen and (min-width:1400px){
+input[type='text'], input[type='email'], input[type='password']{
+        
+        box-shadow: 0 0 5px inset white;
+    }
+    pre{
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width:1900px){
+    pre{
+        font-size: 1.2em;
+    }
+}
 @media screen and (min-width:2560px) {
     :root{
         font-size: 2em;
     }
-        form{
-        width: 30%;
+        form, #credentials{
+        max-width: 750px;
+    }
+    #image{
+        max-width: 80%;
     }
 }
 
